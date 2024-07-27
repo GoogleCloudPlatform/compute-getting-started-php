@@ -90,7 +90,7 @@ class spannerBackupTest extends TestCase
         self::$instance = $spanner->instance(self::$instanceId);
 
         self::$kmsKeyName =
-        'projects/' . self::$projectId . '/locations/us-central1/keyRings/spanner-test-keyring/cryptoKeys/spanner-test-cmek';
+            'projects/' . self::$projectId . '/locations/us-central1/keyRings/spanner-test-keyring/cryptoKeys/spanner-test-cmek';
     }
 
     public function testCreateDatabaseWithVersionRetentionPeriod()
